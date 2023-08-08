@@ -4,9 +4,10 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ComponentToRotate.h"
 #include "RotatorA.generated.h"
 
-UCLASS()
+UCLASS(BlueprintType, Blueprintable)
 class EXERCISES_API ARotatorA : public AActor
 {
 	GENERATED_BODY()
@@ -14,6 +15,8 @@ class EXERCISES_API ARotatorA : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ARotatorA();
+	UPROPERTY(BlueprintReadWrite, EditAnywhere);
+	UComponentToRotate* RotatorComponent;
 
 protected:
 	// Called when the game starts or when spawned

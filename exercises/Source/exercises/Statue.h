@@ -11,16 +11,19 @@ class EXERCISES_API AStatue : public AActor
 {
 	GENERATED_BODY()
 	
-public:	
+private:	
 	// Sets default values for this actor's properties
-	AStatue();
+	
 
 protected:
 	// Called when the game starts or when spawned
+		
+
 	virtual void BeginPlay() override;
 
 public:	
 	// Called every frame
+	AStatue();
 	virtual void Tick(float DeltaTime) override;
 
 };

@@ -19,10 +19,9 @@ void AStatue::BeginPlay()
 	
 }
 
-// Called every frame
-void AStatue::Tick(float DeltaTime)
+void AStatue::Pickup_Implementation()
 {
-	Super::Tick(DeltaTime);
-
+	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, FString("You used the pick up interface"));
+	Destroy();
 }
 

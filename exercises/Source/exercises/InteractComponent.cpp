@@ -28,9 +28,9 @@ void UInteractComponent::TickComponent(float DeltaTime, ELevelTick TickType, FAc
 	for (int i = 0; i < PossibleActors.Num(); i++)
 	{
 		AActor* ActorReference = PossibleActors[i].GetActor();
-		if (ActorReference->Implements<UPickUpable>()))
+		if (ActorReference->Implements<UPickUpable>())
 		{
-
+			IPickUpable::Execute_Pickup(ActorReference);
 		}
 	}
 }

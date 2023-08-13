@@ -16,13 +16,11 @@ private:
 	
 	FCollisionShape TraceSphere;
 
-public:
-	UInteractorComponent();
-
-	UPROPERTY(BlueprintReadOnly, EditAnywhere)
-		float Radius = 500.f;
 
 public:	
+	UInteractComponent();
+	UPROPERTY(BlueprintReadOnly, EditAnywhere)
+		float Radius = 500.f;
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 

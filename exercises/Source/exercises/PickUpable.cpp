@@ -7,6 +7,6 @@ PickUpable::PickUpable()
 {
 }
 
-PickUpable::~PickUpable()
+ickUpable::~PickUpable()
 {
 }

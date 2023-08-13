@@ -11,7 +11,7 @@ UInteractComponent::UInteractComponent()
 	PrimaryComponentTick.bCanEverTick = true;
 	TraceSphere = FCollisionShape::MakeSphere(Radius);
 
-	// ...
+	
 }
 
 

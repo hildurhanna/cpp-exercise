@@ -21,7 +21,7 @@ void AStatue::BeginPlay()
 
 void AStatue::Pickup_Implementation()
 {
-	GEngine->AddOnScreenDebugMessage(-1, 2.f, FColor::Blue, FString("You used the pick up interface"));
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, FString("You used the pick up interface"));
 	Destroy();
 }
 

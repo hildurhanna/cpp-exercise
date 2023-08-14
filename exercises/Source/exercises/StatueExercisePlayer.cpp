@@ -3,6 +3,7 @@
 
 #include "StatueExercisePlayer.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "DrawDebugHelpers.h"
 
 // Sets default values
 AStatueExercisePlayer::AStatueExercisePlayer()
@@ -47,6 +48,8 @@ void AStatueExercisePlayer::Move(const FVector2D AxisInput)
 	auto deltaTime = GetWorld()->GetDeltaSeconds();
 
 	transformedVector *= moveSpeed;
+
+	DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + transformedVector, FColor::Blue, false, 5.f);
 
 	SetActorLocation(
 		GetActorLocation() +
